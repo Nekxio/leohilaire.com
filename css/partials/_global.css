@@ -1,0 +1,621 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.title-text {
+    font: normal bold 50px/72px var(--roboto);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Loader */
+
+.loader-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border: 6px solid var(--gradient-color);
+    top: 0%;
+    animation: loader 2.5s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--gradient-color);
+    animation: loader-inner 2.5s infinite ease-in;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    margin-top: 15%;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+/* Boutons */
+
+.button {
+    padding: 0.8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: var(--title-text);
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: var(--title-text);
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+}
+
+button:focus,
+button:active button:hover .btn.active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+/*paragraphe*/
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+/* Texte */
+
+.txt {
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+/* Font roboto */
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+/* titre h1 */
+
+.title-h1 {
+    font: normal bold 39px/40px va(--roboto);
+}
+
+a {
+    color: #54b0eb;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.white {
+    color: whitesmoke !important;
+}
+
+.sticky-menu {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+#backtop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    border: 0.1875em solid var(--bg-color);
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    background: url(../../src/images/arrow.gif);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+#backtop:hover {
+    border: 0.1875em solid var(--primary-color);
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(5deg, rgba(56, 205, 250, 1) 0%, rgba(254, 0, 148, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* souris scroll */
+
+.middle {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse {
+    width: 45px;
+    height: 75px;
+    border: 4px solid #343434b7;
+    border-radius: 60px;
+    margin-bottom: 5%;
+}
+
+.mouse::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    background: #343434b7;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 1.5s infinite;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 15px;
+    }
+
+    to {
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+/* Surlignage */
+
+.highlight {
+    display: inline-block;
+    color: white;
+    -webkit-transition: color 250ms, text-shadow 250ms;
+    transition: color 250ms, text-shadow 250ms;
+    text-decoration: none;
+
+    position: relative;
+    z-index: 0;
+}
+
+.highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #343434;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.highlight:hover {
+    color: white;
+    text-shadow: 0px 1px 0px black;
+}
+
+.highlight:hover::after {
+    height: 120%;
+    width: 107%;
+}
+
+/* Animations background */
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(43, 43, 43, 0.151);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate-bg 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 20%;
+    left: 60%;
+    animation: animate-bg 10s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 67%;
+    left: 10%;
+    animation: animate-bg 20s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 80%;
+    left: 70%;
+    animation: animate-bg 12s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 60%;
+    left: 80%;
+    animation: animate-bg 15s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 32%;
+    left: 25%;
+    animation: animate-bg 25s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 90%;
+    left: 14%;
+    animation: animate-bg 18s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 20%;
+    left: 90%;
+    animation: animate-bg 12s linear infinite;
+}
+
+@keyframes animate-bg {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        transition: ease-in;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-100px) rotate(360deg);
+        transition: ease-out;
+    }
+}
+
+/* Début Wave */
+
+.wave-area {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.wave-area .wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background: url(../../src/images/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave-area .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave-area .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave-area .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 997;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+
+.wave-area .wave.wave4 {
+    animation: animate2 15s linear infinite;
+    z-index: 996;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/* Fin wave */
+
+/* Début Footer */
+
+footer.footer-area {
+    margin-top: -70px;
+    padding: 2rem 0;
+    background: var(--gradient-color) no-repeat;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a>i {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
+}
+
+/* Fin footer */
+
+
+/* GALLERY */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.807);
+    z-index: 1999;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.portfolio-area .thumbnail {
+    display: flex;
+    float: left ;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 26px;
+    margin-top: -50px;
+    color: #00f7ff !important;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev{
+    top: 41% !important;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgb(54, 54, 54);;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.901);
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+    width: 10% !important;
+    height: 10% !important;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.column.thumbnail{
+    overflow: hidden;
+    height: 80px !important;
+}
+
+.column.thumbnail img{
+   height: 100% !important;
+}

@@ -1,0 +1,529 @@
+@media screen and (max-width: 320px) and (orientation: portrait) {
+
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .skills-area {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1 {
+        font-size: 41px;
+    }
+
+    .site-main>.skills-area .skills {
+        width: 13rem;
+    }
+
+    .site-buttons a {
+        margin-bottom: 1.5rem;
+    }
+
+    .middle .animation-mobile,
+    .wrapper {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-area {
+        margin-top: 25rem !important;
+    }
+
+    .about-area {
+        text-align: justify;
+    }
+
+    .brand-area {
+        margin-top: 10rem;
+    }
+
+    .hidden-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .number-projects {
+        margin-top: -40rem;
+    }
+
+    .years-area {
+        flex-wrap: wrap;
+    }
+
+    .years-area h2 span {
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+
+    .btn-portfolio {
+        margin-top: -10rem;
+    }
+
+    .skills {
+        margin-left: -1rem !important;
+    }
+
+    .timeline-area {
+        flex-direction: column;
+    }
+
+    .timeline-area:hover .timeline-item,
+    .timeline-item:before,
+    .timeline-item:after {
+        width: 100% !important;
+    }
+
+    .timeline-area .timeline-item {
+        width: 20rem;
+    }
+
+    .portfolio-responsive {
+        width: 18rem;
+    }
+
+    .portfolio-area {
+
+        margin-left: -19rem;
+    }
+
+    .portfolio-area img {
+        width: fit-content;
+    }
+
+    .contact-area {
+        padding: 0rem 2rem !important;
+    }
+
+    .smaller-mobile {
+        letter-spacing: 10px !important;
+    }
+
+    .contact-area div div div {
+        margin-bottom: 2rem !important;
+    }
+
+    .hidden-mobile-top {
+        display: none;
+        visibility: hidden !important;
+    }
+
+    .skills .gradient-text {
+        font-size: 1.1rem !important;
+    }
+
+    .skills-area .text-secondary p {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .skills-area {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1 {
+        font-size: 41px;
+    }
+
+    .site-main>.skills-area .skills {
+        width: 13rem;
+    }
+
+    .site-buttons a {
+        margin-bottom: 1.5rem;
+    }
+
+    .middle .animation-mobile,
+    .wrapper {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-area {
+        margin-top: 25rem !important;
+    }
+
+    .about-area {
+        text-align: justify;
+    }
+
+    .brand-area {
+        margin-top: 10rem;
+    }
+
+    .hidden-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .number-projects {
+        margin-top: -40rem;
+    }
+
+    .years-area {
+        flex-wrap: wrap;
+    }
+
+    .years-area h2 span {
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+
+    .btn-portfolio {
+        margin-top: -10rem;
+    }
+
+    .timeline-area {
+        flex-direction: column;
+    }
+
+    .timeline-area:hover .timeline-item,
+    .timeline-item:before,
+    .timeline-item:after {
+        width: 100% !important;
+    }
+
+    .timeline-area .timeline-item {
+        width: 23.5rem;
+    }
+
+    .portfolio-responsive {
+        width: 18rem;
+    }
+
+    .portfolio-area {
+
+        margin-left: -17.5rem;
+    }
+
+    .portfolio-area img {
+        width: fit-content;
+    }
+
+    .contact-area {
+        padding: 0rem 2rem !important;
+    }
+
+    .smaller-mobile {
+        letter-spacing: 10px !important;
+    }
+
+    .contact-area div div div {
+        margin-bottom: 2rem !important;
+    }
+
+    .hidden-mobile-top {
+        display: none;
+        visibility: hidden;
+    }
+
+    .skills .gradient-text {
+        font-size: 1.2rem !important;
+    }
+
+    .skills-area .text-secondary p {
+        font-size: 1.1rem !important;
+    }
+    .hidden-mobile-top {
+        display: none;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (min-width: 425px) and (orientation: portrait) {
+
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .skills-area {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1 {
+        font-size: 41px;
+    }
+
+    .site-main>.skills-area .skills {
+        width: 13rem;
+    }
+
+    .site-buttons a {
+        margin-bottom: 1.5rem;
+    }
+
+    .middle .animation-mobile,
+    .wrapper {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-area {
+        margin-top: 30rem !important;
+    }
+
+    .about-area {
+        text-align: justify;
+    }
+
+    .brand-area {
+        margin-top: 10rem;
+    }
+
+    .hidden-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .number-projects {
+        margin-top: -40rem;
+    }
+
+    .years-area {
+        flex-wrap: wrap;
+    }
+
+    .years-area h2 span {
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+
+    .years-area h2 {
+        margin-left: 4rem;
+    }
+
+    .btn-portfolio {
+        margin-top: -10rem;
+    }
+
+    .skills {
+        margin-left: 2rem !important;
+    }
+
+    .skills .gradient-text {
+        font-size: 1.2rem !important;
+    }
+
+    .skills-area .text-secondary p {
+        font-size: 1.1rem !important;
+    }
+
+    .timeline-area {
+        flex-direction: column;
+    }
+
+    .timeline-area:hover .timeline-item,
+    .timeline-item:before,
+    .timeline-item:after {
+        width: 100% !important;
+    }
+
+    .timeline-area .timeline-item {
+        width: 26.5rem;
+    }
+
+    .portfolio-responsive {
+        width: 18rem;
+    }
+
+    .portfolio-area {
+        margin-left: -15.5rem;
+    }
+
+    .portfolio-area img {
+        width: fit-content;
+    }
+
+    .contact-area {
+        padding: 0rem 5rem;
+    }
+
+    .smaller-mobile {
+        letter-spacing: 10px;
+    }
+
+    .contact-area div div div {
+        margin-bottom: 2rem;
+    }
+
+    .hidden-mobile-top {
+        display: none;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+
+    .skills .gradient-text {
+        font-size: 1.2rem !important;
+    }
+
+    .skills-area .text-secondary p {
+        font-size: 1.1rem !important;
+    }
+
+    .experience-area {
+        margin-top: 40rem;
+        margin-left: 9.5rem;
+    }
+
+    .hidden-mobile {
+        visibility: visible;
+    }
+
+    .btn-portfolio {
+        margin-top: -5rem;
+    }
+
+    .timeline-area {
+        flex-direction: column;
+    }
+
+    .timeline-area:hover .timeline-item,
+    .timeline-item:before,
+    .timeline-item:after {
+        width: 100% !important;
+    }
+
+    .timeline-area .timeline-item {
+        width: 48rem;
+    }
+
+
+    .timeline-item p {
+        font-size: larger;
+    }
+
+    .portfolio-responsive {
+        width: 30rem;
+    }
+
+    .portfolio-area {
+        margin-left: -11rem;
+    }
+
+    .portfolio-area img {
+        width: fit-content;
+    }
+
+    .contact-area {
+        padding: 0rem 15rem !important;
+    }
+
+    .smaller-mobile {
+        letter-spacing: 25px !important;
+    }
+
+    .contact-area div div div {
+        margin-bottom: 2rem !important;
+    }
+
+    .hidden-mobile-top {
+        display: none;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (max-width: 792px) and (orientation: portrait) {
+    .site-main .about-area .about-title h2>span {
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .brand-area .experience-area .years-area {
+        padding-left: 1%;
+        width: 49%;
+    }
+
+    .site-main .brand-area .experience-area .bg-panel {
+        margin-left: 30%;
+        width: 110%;
+    }
+
+    .site-main .brand-area .experience-area .call-area {
+        padding-left: 3%;
+    }
+
+    .site-main .about-area .about-title p {
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .timeline-area {
+        flex-direction: column;
+    }
+
+    .timeline-area:hover .timeline-item,
+    .timeline-item:before,
+    .timeline-item:after {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1910px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .skills-area,
+    .site-main .about-area {
+        padding: 3% 4%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .middle-mouse {
+        margin-top: -10%;
+    }
+
+    .timeline-area .timeline-item {
+        font-size: 14px;
+        min-height: 110vh;
+    }
+
+    .site-main .card-body p {
+        font-size: 1.5vh;
+    }
+
+    .site-main .card-body h5 {
+        font-size: 1.7vh;
+    }
+
+    .site-main .portfolio-area .first-row .col-lg-4>.single-portfolio {
+        height: 100px;
+    }
+
+    .site-main .portfolio-area .first-row .col-lg-4>.single-portfolio img {
+        max-width: 130%;
+        transform: translateX(-10%);
+    }
+
+    .wave-area {
+        margin-top: 2%;
+    }
+
+    .site-main .contact-area .about-title h2>span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {}

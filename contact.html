@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ma page de contact avec formulaire et mes différents réseaux - Leo Hilaire">
+    <meta name="keywords"
+        content="leo hilaire, développeur, html, css, javascript, php, android, wordpress, adobe, facebook, twitter">
+    <meta name="author" content="Leo Hilaire">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Léo Hilaire | Contact</title>
+    <!-- ============== CSS/Bootstrap/Fontawesome/Responsive ============== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcX28UeAAAAAFc8WoSw9Wr0nqJhEvg_khJq2SJl"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LeiHAkdAAAAAMNk1dXBkgNzTyI_d-AGERO7xRkU', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- ============================ Menu ============================== -->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html">LH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================ Fin Menu ============================== -->
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ============================ Début Main ============================== -->
+    <main class="site-main">
+        <!-- ============================ Début Bannière ============================== -->
+        <!-- ============================ Début Bannière ============================== -->
+        <section class="skills-area">
+            <div class="row">
+                <div class="col-lg-12 text-center skills-title">
+                    <h1 class="text-uppercase title-text gradient-text">Contact</h1>
+                    <p class="para">
+                        Mes coordonnées ainsi qu'un formulaire de contact afin de me contacter rapidement par mail
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ Fin Bannière ============================== -->
+        <section class="contact-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span class="smaller-mobile">Pour</span>
+                            <span class="smaller-mobile">me</span>
+                            <span class="smaller-mobile">Contacter</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <span class="h4 txt"> Mon adresse e-mail : </span></br>
+                            <a href="mailto:leohilaire.contact@gmail.com" class="h5 font-roboto">
+                                contact@leohilaire.com</a>
+                            <br>
+                            <span class="h4 txt"> Mon LinkedIn : </span></br>
+                            <a href="https://www.linkedin.com/in/leo-hilaire" class="h5 font-roboto">
+                                linkedin.com/in/leo-hilaire</a>
+                        </div>
+                        <a class="btn button primary-button text-uppercase" onclick="alert_download_cv()">Télécharger
+                            mon CV</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <form class="contact-form validate-form" action="phpmailer.php" method="POST" id="form_website" style="display: none;">
+                                <span class="contact-form-title gradient-text text-uppercase">
+                                    M'envoyer un mail
+                                </span>
+
+                                <div class="wrap-input validate-input" data-validate="Un nom est requis">
+                                    <span class="label-input">Votre nom</span>
+                                    <input class="input" type="text" name="name" placeholder="Entrer votre nom" id="form_name"
+                                        required>
+                                    <span class="focus-input"></span>
+                                </div>
+
+                                <div class="wrap-input validate-input"
+                                    data-validate="Une adresse e-mail valide est requise: exemple@gmail.com">
+                                    <span class="label-input">Votre adresse e-mail</span>
+                                    <input class="input" type="text" name="mail" id="form_email"
+                                        placeholder="Entrer votre adresse e-mail" required>
+                                    <span class="focus-input"></span>
+                                </div>
+                                <div class="wrap-input validate-input" data-validate="Un message est requis">
+                                    <span class="label-input">Message</span>
+                                    <textarea class="input" name="message" placeholder="Votre message..." id="form_message"
+                                        required></textarea>
+                                    <span class="focus-input"></span>
+                                </div>
+                                <div class="container-contact-form-btn">
+                                    <div class="wrap-contact-form-btn">
+                                        <div class="contact-form-bgbtn"></div>
+                                        <button type="submit" class="contact-form-btn" name="submit"
+                                            onclick="alert_mail()">
+                                            <span>
+                                                Envoyer
+                                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ============================ Fin Main ============================== -->
+
+    <!-- ============================ Back to TOP ============================== -->
+    <button class="circle hidden-mobile-top" onclick="topFunction()" id="backtop" title="Go to top"></button>
+
+    <!-- ============================ Début Waves ============================== -->
+    <section class="wave-area">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+    <!-- ============================ Fin Waves ============================== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div>
+                <div class="site-logo text-center py-4">
+
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase white">
+                        Suivez-moi !
+                    </h5>
+                    <a href="https://www.linkedin.com/in/léo-hilaire-7a6564188/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Nekxio" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para white">
+                        Copyright ©2020-2021 | Tous droits réservés | Ce site a été conçu par
+                        <a href="#" class="highlight"><span>Léo Hilaire</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        <h1 class="title-text text-uppercase gradient-text" id="loading">Chargement</h1>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/f34b98d76a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
